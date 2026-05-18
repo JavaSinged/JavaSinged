@@ -8,22 +8,22 @@
 ## Tech Stack
 
 Language
-Java, JavaScript
+- Java, JavaScript
 
 Backend
-Spring Boot, Spring Security, MyBatis, JWT
+- Spring Boot, Spring Security, MyBatis, JWT
 
 Frontend
-React, Vite, Zustand
+- React, Vite, Zustand
 
 Database
-Oracle DB, MySQL
+- Oracle DB, MySQL
 
 Infra / DevOps
-AWS, Render, Vercel
+- AWS, Render, Vercel
 
 ETC
-REST API, SSE, Toss Payments, Cloudinary
+- REST API, SSE, Toss Payments, Cloudinary
 
 ---
 
