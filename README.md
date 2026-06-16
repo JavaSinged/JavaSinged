@@ -90,4 +90,4 @@ ERD 설계부터 테이블 구조 정의, 데이터 흐름 설계까지
 ---
 
 ## Contact
-123tls5670@naver.com
+shinjiwoong1656@gmail.com
