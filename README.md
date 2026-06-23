@@ -1,93 +1,71 @@
-# 신지웅
+# 신지웅 — Backend Developer
 
-데이터 흐름을 이해하고 문제 원인을 끝까지 추적하는 개발자입니다.
-단순 기능 구현을 넘어, 데이터가 어디에서 어긋나는지 구간별로
-확인하며 근본 원인을 찾는 과정에 더 큰 흥미를 느낍니다.
+정상 흐름보다 실패 흐름을 먼저 그립니다.  
+데이터가 어긋날 수 있는 지점을 찾고, 그걸 막는 구조를 먼저 잡습니다.
 
----
+<br/>
 
 ## Tech Stack
 
-Language
-- Java, JavaScript
+**Backend**  
+Java · Spring Boot · Spring Security · Spring MVC · MyBatis · JWT
 
-Backend
-- Spring Boot, Spring Security, MyBatis, JWT
+**Frontend**  
+React · Vite · Zustand · TanStack Query · Axios · CSS Modules
 
-Frontend
-- React, Vite, Zustand
+**Database**  
+MySQL · Oracle DB
 
-Database
-- Oracle DB, MySQL
+**Infra / DevOps**  
+AWS EC2 · AWS S3 · CloudFront · AWS RDS · Docker · GitHub Actions · Kubernetes / k3s
 
-Infra / DevOps
-- AWS, Docker, GitHub Actions
+**External**  
+Toss Payments · Cloudinary · OneSignal · SSE
 
-ETC
-- REST API, SSE, Toss Payments, Cloudinary, OneSignal
+<br/>
 
----
+## Projects
 
-## Project
+### 🌱 GreenCarry
+> 다회용기 사용과 친환경 배달 방식을 중심으로 설계한 음식 주문 플랫폼
 
-### GreenCarry
-친환경 다회용기 기반 음식 주문 플랫폼입니다.
-주문, 결제, 포인트, 탄소 절감량, 실시간 알림까지
-하나의 흐름으로 연결된 구조를 설계하고 구현했습니다.
+**GitHub** | https://github.com/JavaSinged/green_carry  
+**Live Demo** | https://greencarry.vercel.app
 
-GitHub: https://github.com/JavaSinged/green_carry
+**Stack**  
+Java · Spring Boot · Spring Security · MyBatis · Oracle DB · React · Vite · Zustand · Toss Payments · SSE · Vercel · Render
 
-Tech Stack
-Spring Boot, Java 17, React, Vite, Oracle DB, MyBatis, JWT
+**내가 한 것**
+- 팀장 | 기획, DB 설계, 역할 분배, 배포까지 전 과정 주도
+- 주문 생성 로직에 `@Transactional` 적용 — 포인트 차감, 주문 저장, 이력 저장 중 하나라도 실패하면 전체 롤백되도록 구성
+- 포인트 차감 쿼리에 DB 단계 조건 추가 — 프론트 검증만으론 부족하다고 판단, 보유 포인트 초과 요청을 서버에서도 차단
+- 주문 취소 시 포인트 복구, 완료 시 포인트 적립·탄소 절감량 누적을 하나의 서비스 흐름으로 묶어 데이터 정합성 확보
+- 매장 영업시간·휴무일 데이터 처리 로직 구현
+- 회원·점주·관리자 역할 기반 권한 구조 설계
 
-What I Did
-- 팀장으로서 기획, 역할 분배, 일정 관리, 배포까지 전 과정 주도
-- 점주 휴무일 데이터가 잘못 저장되는 문제를 데이터 흐름 전체를
-  추적해 원인 구간을 찾아 해결
-- 주문·포인트·탄소절감량 동시 저장 구조에서 실패 시나리오를
-  직접 시뮬레이션하며 데이터 일관성 검증
-- 회원 / 점주 / 관리자 역할 기반 권한 구조 설계
-- Toss Payments 연동 결제, SSE 기반 실시간 알림 구현
+<br/>
 
----
+### 📅 WithDay
+> 여행, 식사, 문화생활 등 다양한 일정을 만들고 함께할 사람을 모집하는 일정 동행 플랫폼
 
-### WithDay
-여행이나 일정을 올리고 동행을 구할 수 있는 매칭 플랫폼입니다.
-일정 생성부터 동행 신청, 호스트 승인/거절, 푸시 알림까지
-이어지는 사용자 흐름을 구현했습니다.
+**GitHub** | https://github.com/JavaSinged/WithDay  
+**Live Demo** | https://withday-mib.vercel.app  
+**Notion** | https://app.notion.com/p/0a2c51dc8c4683e8bb5b8170c24be3cc
 
-GitHub: https://github.com/JavaSinged/WithDay
+**Stack**  
+Java · Spring Boot · Spring Security · MyBatis · MySQL · React · Vite · TanStack Query · Zustand · CSS Modules · AWS S3 · CloudFront · Docker · Kubernetes · GitHub Actions
 
-Tech Stack
-React, Vite, Spring Boot, Java 17, MySQL, MyBatis,
-AWS S3, CloudFront, Docker, GitHub Actions
+**내가 한 것**
+- 팀장 | API 명세서 선행 작성으로 프론트·백엔드 요청·응답 기준 통일
+- 참여 신청 흐름 설계 — 모집 마감·정원 초과·중복 신청·호스트 본인 신청 등 실패 케이스를 먼저 정의하고 서버에서 검증
+- `ParticipationController`는 요청 수신·DTO 전달에 집중, 검증·상태 저장은 `ParticipationService`로 분리
+- `ParticipationService`에서 신청 완료 후 `NotificationService` 호출 — 컨트롤러 간 직접 호출 없이 도메인 책임 분리
+- 홈 화면 UI, 일정 탐색, 참여 신청·취소, 내 일정 탭 구조 구현
+- GitHub Actions 기반 프론트엔드 CI/CD 구성 · 모바일 반응형 개선
 
-What I Did
-- 팀장으로서 이슈 트래킹, 역할 분배, 일정 관리 주도
-- 탭 전환 시 데이터가 섞여 표시되는 문제를 캐시 구조에서
-  원인을 찾아 해결
-- OneSignal 연동으로 일정 승인·거절 등 주요 이벤트
-  푸시 알림 구현
-- GitHub Actions 기반 빌드 및 배포 자동화 구성
-- 모바일·태블릿 반응형 레이아웃 적용
-
----
-
-## Strength
-
-문제 해결 중심
-오류를 수정하는 데 그치지 않고, 데이터가 흐르는 과정을
-구간별로 추적하며 근본 원인을 찾습니다.
-
-데이터 설계 경험
-ERD 설계부터 테이블 구조 정의, 데이터 흐름 설계까지
-직접 수행했습니다.
-
-외부 서비스 연동 경험
-결제, 이미지 업로드, 지도, 푸시 알림 등 다양한 외부
-서비스를 직접 연동했습니다.
-
----
+<br/>
 
 ## Contact
-shinjiwoong1656@gmail.com
+
+📧 shinjiwoong1656@gmail.com  
+💻 https://github.com/JavaSinged
