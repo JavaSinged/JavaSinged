@@ -11,7 +11,7 @@
 Java · Spring Boot · Spring Security · Spring MVC · MyBatis · JWT
 
 **Frontend**  
-React · Vite · Zustand · TanStack Query · Axios · CSS Modules
+React · Vite · Zustand · React Query · Axios · CSS Modules
 
 **Database**  
 MySQL · Oracle DB
@@ -20,7 +20,7 @@ MySQL · Oracle DB
 AWS EC2 · AWS S3 · CloudFront · AWS RDS · Docker · GitHub Actions · Kubernetes / k3s
 
 **External**  
-Toss Payments · Cloudinary · OneSignal · SSE
+Toss Payments · Cloudinary · OneSignal
 
 <br/>
 
