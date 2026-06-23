@@ -68,4 +68,4 @@ Java · Spring Boot · Spring Security · MyBatis · MySQL · React · Vite · T
 ## Contact
 
 📧 shinjiwoong1656@gmail.com  
-💻 https://github.com/JavaSinged
+💻 [Notion](https://jiwoong-shin.notion.site/Backend-Developer-e2751061ca3a8348a44a01912c8a8c45?pvs=143)
