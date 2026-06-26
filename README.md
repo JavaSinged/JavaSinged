@@ -103,7 +103,7 @@ AWS S3 · CloudFront · Docker · Kubernetes · GitHub Actions
 ## Portfolio
 
 📝 **Notion Portfolio**
-https://jiwoong-shin.notion.site/Backend-Developer-e2751061ca3a8348a44a01912c8a8c45?pvs=143
+[Notion Portfolio](https://jiwoong-shin.notion.site/Fullstack-Developer-e2751061ca3a8348a44a01912c8a8c45?pvs=143)
 
 <br/>
 
