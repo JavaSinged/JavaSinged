@@ -1,4 +1,4 @@
-# 신지웅 — Backend Developer
+# 신지웅 — Full-Stack Developer
 
 정상 흐름보다 실패 흐름을 먼저 그립니다.  
 데이터가 어긋날 수 있는 지점을 찾고, 그걸 막는 구조를 먼저 잡습니다.
