@@ -31,8 +31,7 @@ Toss Payments · Cloudinary · OneSignal · Naver Maps · Daum Postcode
 
 > 다회용기 사용과 친환경 배달 방식을 중심으로 설계한 음식 주문 플랫폼
 
-**GitHub** | https://github.com/JavaSinged/green_carry
-
+**GitHub** | https://github.com/JavaSinged/green_carry<br/>
 **Live Demo** | https://greencarry.vercel.app
 
 **Stack**
@@ -68,10 +67,8 @@ Vercel · Render
 
 > 여행, 식사, 문화생활 등 다양한 일정을 만들고 함께할 사람을 모집하는 일정 동행 플랫폼
 
-**GitHub** | https://github.com/JavaSinged/WithDay
-
-**Live Demo** | https://withday-mib.vercel.app
-
+**GitHub** | https://github.com/JavaSinged/WithDay<br/>
+**Live Demo** | https://withday-mib.vercel.app<br/>
 **Notion** | https://app.notion.com/p/0a2c51dc8c4683e8bb5b8170c24be3cc
 
 **Stack**
